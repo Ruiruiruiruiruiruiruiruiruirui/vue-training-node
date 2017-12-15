@@ -33,6 +33,6 @@ require('./app/routes').forEach(router => router({server}))
 
 // ===============================
 // start server
-server.listen(port, host, () => {
+server.listen(port, () => {
     console.log(`${server.name} is listening at ${server.url}`)
 })
