@@ -7,9 +7,10 @@
     "main": "NODE_DEBUG=request node index.js",
     "dev": "./node_modules/nodemon/bin/nodemon.js index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/nodemon/bin/nodemon.js index.js"
+    "start": "forever index.js"
   },
   "dependencies": {
+    "forever": "^0.15.3",
     "request": "^2.78.0",
     "request-debug": "^0.2.0",
     "request-promise": "^4.1.1",

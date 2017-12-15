@@ -4,7 +4,7 @@
 const name = 'vue-training-node'
 
 const host = ''
-const port = 8082
+const port = ''
 const env = 'dev'
 
 // create server
