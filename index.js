@@ -3,6 +3,8 @@
  */
 const name = 'vue-training-node'
 
+const port = process.env.PORT || 8082
+
 // create server
 const restify = require('restify')
 
@@ -31,6 +33,6 @@ require('./app/routes').forEach(router => router({server}))
 
 // ===============================
 // start server
-server.listen(() => {
+server.listen(port, host, () => {
     console.log(`${server.name} is listening at ${server.url}`)
 })
